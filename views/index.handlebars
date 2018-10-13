@@ -1,0 +1,56 @@
+<header>
+
+	<nav class="blue-grey darken-2" role="navigation">
+		<div class="nav-wrapper">
+
+			<a id="logo-container" href="/" class="brand-logo left">
+				<img id="NPRLogo" src="/assets/images/npr.png">
+				<span id="scraped"> Scraped </span>
+			</a>
+
+			<ul id="dropdown1" class="dropdown-content hide-on-large-only">
+				<li><a href="/"> Home </a></li>
+				<li><a href="/"> Scrape New Articles </a></li>
+				<li><a href="/saved"> Saved </a></li>
+				<li><a href="/hidden"> Hidden </a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="/"> Home </a></li>
+				<li><a href="/"> Scrape New Articles </a></li>
+				<li><a href="/saved"> Saved </a></li>
+				<li><a href="/hidden"> Hidden </a></li>
+			</ul>
+
+			<li><a class="dropdown-button right hide-on-large-only" href="#" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
+
+		</div>
+	</nav>
+
+</header>
+
+<div class="container">
+	<div class="row">
+
+		{{#if current}} {{> current_articles }} {{/if}} {{#if saved}} {{> saved_articles }} {{/if}} {{#if hidden}} {{> hidden_articles
+		}} {{/if}}
+
+		<div id="notesSection" class="col s3">
+			<span id="notesTitle">NOTES</span>
+			<div id="notesDiv">
+				<div class="col s12">
+					<div id="notes"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer class="page-footer blue-grey darken-2">
+	<div class="container">
+		<div class="row">
+			<a class="white-text"> &#169; 2017 Maria Wong</a>
+		</div>
+	</div>
+</footer>

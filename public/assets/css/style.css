@@ -1,0 +1,270 @@
+	
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+
+	body {
+		margin: 0 0 85px 0;
+	}
+
+	nav {
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+
+	header {
+		margin-bottom: 30px;
+	}
+
+	#articlesDiv {
+		border-top: solid #455a64 2px;
+	}
+
+	#articlesSection {
+        display: inline-block;
+        overflow: auto;
+        width: 85%;
+        max-height: 700px;
+        margin-left: -100px;
+    }
+
+    #articlesTitle {
+		font-size: 20px;
+		padding-left: 5px;
+	}
+
+	.horizontal {
+		height: 270px;
+	}
+
+	.article-title {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.card-image, img {
+		width: 200px;
+		height: 216px;
+	}
+
+	.card-content {
+		height: 216px;
+		overflow: scroll;
+	}
+
+	#notesDiv {
+		border-top: solid #455a64 2px;
+		margin-right: -100px;
+	}
+
+    #notesSection {
+        float: right;
+        width: 24%;
+    }
+
+	#notesTitle {
+		margin-right: -100px;
+		font-size: 20px;
+		padding-left: 5px;
+	}
+
+	.notesArticle {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.noteBody {
+		margin: 0;
+	}
+
+	.input-field {
+		margin-top: -10px;
+	}
+
+	textarea {
+		height: 200px;
+		padding: 10px;
+	}
+
+	#saveNote {
+		color: #1976d2;
+		background-color: #e0e0e0;
+		padding: 3px 12px 3px 12px;
+	}
+
+	#saveNote:hover {
+		color: white;
+		background-color: #455a64;
+	}
+
+	#NPRLogo {
+		height: 70px;
+		width: 140px;
+		margin-right: 20px;
+		margin-left: -7px;
+	}
+
+	#scraped {
+		position: absolute;
+		top: 3px;
+		font-family: 'VT323', monospace;
+		font-size: 50px;
+	}
+
+	footer {
+	    text-align: center;
+	    height: 60px;
+	    padding-top: 20px;
+	    position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+/************ MEDIA 1200 MEDIA 1200 MEDIA 1200 MEDIA 1200 MEDIA 1200 *******************************/
+
+@media screen and (max-width: 1200px) {
+
+	#articlesSection {
+        width: 80%;
+        margin-left: -35px;
+    }
+
+	.horizontal {
+		height: 204px;
+	}
+
+	.article-title {
+		font-size: 18px;
+	}
+
+	.card-image, img {
+		width: 146px;
+		height: 150px;
+	}
+
+	.card-content {
+		height: 150px;
+	}
+
+	#notesDiv {
+		margin-right: -35px;
+	}
+
+    #notesSection {
+        width: 24%;
+    }
+
+}
+
+/************ MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 *******************************/
+
+@media screen and (max-width: 768px) {
+
+	#articlesSection {
+        width: 80%;
+        margin-left: -40px;
+    }
+
+	.card-image {
+		display: none;
+	}
+
+    #notesSection {
+        width: 25%;
+    }
+
+	#saveNote {
+		padding: 3px 6px 3px 6px;
+	}
+
+}
+
+/************ MEDIA 640 MEDIA 640 MEDIA 640 MEDIA 640 MEDIA 640 *******************************/
+
+@media screen and (max-width: 640px) {
+
+	#articlesSection {
+        width: 75%;
+        margin-left: -17px;
+    }
+
+	.article-title {
+		font-size: 17px;
+	}
+
+	#notesDiv {
+		margin-right: -17px;
+		margin-left: -17px;
+	}
+
+    #notesSection {
+        width: 28%;
+    }
+
+	.notesArticle {
+		font-size: 17px;
+	}
+
+	#NPRLogo {
+		width: 110px;
+	}
+
+	#scraped {
+		font-size: 45px;
+	}
+
+}
+
+/************ MEDIA 520 MEDIA 520 MEDIA 520 MEDIA 520 MEDIA 520 *******************************/
+
+@media screen and (max-width: 520px) {
+
+	#NPRLogo {
+		width: 90px;
+		margin-left: -60px;
+	}
+
+	#scraped {
+		font-size: 40px;
+	}
+
+	.link {
+		padding-right: 18px;
+	}
+
+	.notes {
+		padding-right: 69px;
+	}
+
+	.saveArticle {
+		padding-right: 19px;
+	}
+
+	.hideArticle {
+		padding-right: 0px;
+	}
+
+}
+
+/************ MEDIA 485 MEDIA 485 MEDIA 485 MEDIA 485 MEDIA 485 *******************************/
+
+@media screen and (max-width: 485px) {
+
+	#scraped {
+		font-size: 40px;
+	}
+
+	.link {
+		padding-right: 16px;
+	}
+
+	.notes {
+		padding-right: 49px;
+	}
+
+}
+
+
+
+
